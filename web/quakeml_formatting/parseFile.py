@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from obspy import read_events
 
 def parseFile(n):
