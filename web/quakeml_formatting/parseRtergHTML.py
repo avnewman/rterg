@@ -49,8 +49,13 @@ def builddf(htmlfiles):
     return df
 
 htmlfiles=glob.glob('rterg_html_outs/*.html')
-#htmlfiles=glob.glob('../../../../events/????/????????/[0-9]???????.html')
-df = parseRtergHtml(htmlfiles)
+#print(htmlfiles)
+#exit(0)
+htmlfiles=glob.glob('../../../../events/202?/????????/[0-9]???????.html')
+# realize now that older html files do not have the second TACER line.  Will need to work with this.
+# too cannot read all data at once with current method, as we're getting low memory errors.
+
+df = builddf(htmlfiles)
 print(df.head())
 
 
