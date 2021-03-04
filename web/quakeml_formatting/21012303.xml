@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='us-ascii'?>
+<root><event><Eventname>21012303</Eventname><oTime>2021-01-23 23:36:55+00:00</oTime><Lat.>-62.0</Lat.><Long.>-55.3</Long.><Depth>10.0</Depth><Me>7.01</Me><Txo>53</Txo><Ehf>9.7e+13</Ehf><Ebb>7.3e+14</Ebb><Mehf>6.89</Mehf><Ehf/Tr^3>650000000.0</Ehf/Tr^3><Nstats>32</Nstats><SRC>AT</SRC><iMagType>M</iMagType><iMag>7.3</iMag><TACER_HF>27.0</TACER_HF><TACER_BB>26.0</TACER_BB><Comment> this is our comment text</Comment><mTime>2021-01-28 14:25:57+00:00</mTime><iteration> A</iteration></event></root>
