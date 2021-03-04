@@ -41,22 +41,30 @@ def parseRtergHtml(html):
 def builddf(htmlfiles):
     df= pd.DataFrame()
     for html in htmlfiles:
-        df1=parseRtergHtml(html)
-        if len(df) == 0:  # first run keeps header
-            df=df1
-        else:  # otherwise strip it
-            df=df.append(df1, ignore_index = True)               
+        print(html)
+        try: 
+            df1=parseRtergHtml(html)
+            if len(df) == 0:  # first run keeps header
+                df=df1
+            else:  # otherwise strip it
+                df=df.append(df1, ignore_index = True)               
+        except:
+            continue
     return df
 
 htmlfiles=glob.glob('rterg_html_outs/*.html')
 #print(htmlfiles)
 #exit(0)
-htmlfiles=glob.glob('../../../../events/202?/????????/[0-9]???????.html')
+htmlfiles=glob.glob('../../../../events/2021/????????/[0-9]???????.html')
+htmlfiles.append('../../../../events/2018/18101000/18101000.html')
+# the below one seems to work now
+htmlfiles=glob.glob('../../../../events/????/????????/[0-9]???????.html')
 # realize now that older html files do not have the second TACER line.  Will need to work with this.
 # too cannot read all data at once with current method, as we're getting low memory errors.
 
 df = builddf(htmlfiles)
 print(df.head())
+print(df.tail())
 
 
 #for filepath in glob.glob('../../../../events/????/????????/[0-9]???????.html'):
