@@ -1,9 +1,15 @@
 #!/usr/bin/env python3
 # Chelsea Yangnouvong and Andrew Newman
-# last updated Wed Mar  3 08:58:20 EST 2021
+# last updated Mon Mar  8 10:29:23 EST 2021
 
 import pandas as pd
 import glob
+import sys
+
+def printerror(*args, **kwargs):
+    print(*args, file=sys.stderr, **kwargs)
+
+
 
 
 def parseRtergHtml(html):
@@ -11,6 +17,7 @@ def parseRtergHtml(html):
                  "Ehf", "Ebb", "Mehf", "Ehf/Tr^3", "Nstats", "colon", "SRC", "iMag"]
     df1 = pd.read_csv(html, names = colNames1, skiprows = 1, nrows = 1, delim_whitespace=True)
     del df1["colon"]  #remove colon column
+    df1["Eventname"] = str(int(df1["Eventname"])).zfill(8)   # convert to string with leading zeros
     df1["SRC"] = df1.iloc[0]["SRC"][5:7]
     iMagTypeVal = df1.iloc[0]["iMag"].split("=")[0]
     df1.insert(14, "iMagType", iMagTypeVal)
@@ -51,7 +58,6 @@ def parseRtergHtml(html):
 def builddf(htmlfiles):
     df= pd.DataFrame()
     for html in htmlfiles:
-        print(html)
         try: 
             df1=parseRtergHtml(html)
             if len(df) == 0:  # first run keeps header
@@ -59,18 +65,18 @@ def builddf(htmlfiles):
             else:  # otherwise strip it
                 df=df.append(df1, ignore_index = True)               
         except:
+            printerror("Skipped",  html, "parseRtergHtml failed to read", sep=" : ")
             continue
     return df
 
-htmlfiles=glob.glob('rterg_html_outs/*.html')
-#print(htmlfiles)
-#exit(0)
-htmlfiles=glob.glob('../../../../events/2021/????????/[0-9]???????.html')
-htmlfiles.append('../../../../events/2018/18101000/18101000.html')
+# local testing
+# htmlfiles=glob.glob('rterg_html_outs/*.html')
+# one year 
+#  htmlfiles=glob.glob('../../../../events/2021/????????/[0-9]???????.html')
+# adding files
+#  htmlfiles.append('../../../../events/2018/18101000/18101000.html')
 # the below one seems to work now
 htmlfiles=sorted(glob.glob('../../../../events/????/????????/[0-9]???????.html'))
-# realize now that older html files do not have the second TACER line.  Will need to work with this.
-# too cannot read all data at once with current method, as we're getting low memory errors.
 
 df = builddf(htmlfiles)
 print(df.head())
@@ -80,5 +86,3 @@ print(df.index)
 df.to_csv('rterg_summary.csv', sep='\t')
 df.to_pickle('rterg_summary.pkl')
 
-#for filepath in glob.glob('../../../../events/????/????????/[0-9]???????.html'):
-    
