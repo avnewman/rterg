@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<q:quakeml xmlns="http://quakeml.org/xmlns/bed/1.2" xmlns:q="http://quakeml.org/xmlns/quakeml/1.2" xmlns:ns0="OriginTime">
+  <eventParameters publicID="smi:local/3b1c01b7-4f08-440c-8277-639266a7b064">
+    <event publicID="smi:local/2d915be9-8cc3-49ef-84b1-94ba7f7e3c85">
+      <magnitude publicID="smi:local/9c24ed1f-6d17-48e4-a9a0-83604f92a23d">
+        <mag>
+          <value>1.0</value>
+        </mag>
+        <type>Me</type>
+      </magnitude>
+      <magnitude publicID="smi:local/d6f30418-3cef-469e-875b-192bb63eafdf">
+        <mag>
+          <value>2.0</value>
+        </mag>
+        <type>Mi</type>
+      </magnitude>
+    </event>
+    <ns0:oTime>2013-01-02T13:12:14.600000Z</ns0:oTime>
+  </eventParameters>
+</q:quakeml>
