@@ -1,0 +1,178 @@
+<q:quakeml xmlns="http://quakeml.org/xmlns/bed/1.2" xmlns:anss="http://anss.org/xmlns/event/0.1" xmlns:catalog="http://anss.org/xmlns/catalog/0.1" xmlns:q="http://quakeml.org/xmlns/quakeml/1.2">
+<eventParameters publicID="quakeml:earthquake.usgs.gov/fdsnws/event/1/query.quakeml?starttime=2021-02-01%20000000&endtime=2021-03-01%20235959&minmagnitude=6.5&orderby=time-asc">
+<event catalog:datasource="us" catalog:eventsource="us" catalog:eventid="6000de34" publicID="quakeml:earthquake.usgs.gov/fdsnws/event/1/query?eventid=us6000de34&format=quakeml">
+<description>
+<type>earthquake name</type>
+<text>West Chile Rise</text>
+</description>
+<origin catalog:datasource="us" catalog:dataid="us6000de34" catalog:eventsource="us" catalog:eventid="6000de34" publicID="quakeml:earthquake.usgs.gov/archive/product/origin/us6000de34/us/1615814029040/product.xml">
+<time>
+<value>2021-02-03T05:23:43.520Z</value>
+</time>
+<longitude>
+<value>-97.8</value>
+</longitude>
+<latitude>
+<value>-36.2797</value>
+</latitude>
+<depth>
+<value>10000</value>
+<uncertainty>1200</uncertainty>
+</depth>
+<originUncertainty>
+<horizontalUncertainty>9700</horizontalUncertainty>
+<preferredDescription>horizontal uncertainty</preferredDescription>
+</originUncertainty>
+<quality>
+<usedPhaseCount>114</usedPhaseCount>
+<standardError>0.96</standardError>
+<azimuthalGap>40</azimuthalGap>
+<minimumDistance>13.395</minimumDistance>
+</quality>
+<evaluationMode>manual</evaluationMode>
+<creationInfo>
+<agencyID>us</agencyID>
+<creationTime>2021-03-15T13:13:49.040Z</creationTime>
+</creationInfo>
+</origin>
+<magnitude catalog:datasource="us" catalog:dataid="us6000de34" catalog:eventsource="us" catalog:eventid="6000de34" publicID="quakeml:earthquake.usgs.gov/archive/product/origin/us6000de34/us/1615814029040/product.xml#magnitude">
+<mag>
+<value>6.7</value>
+<uncertainty>0.048</uncertainty>
+</mag>
+<type>mww</type>
+<stationCount>41</stationCount>
+<originID>quakeml:earthquake.usgs.gov/archive/product/origin/us6000de34/us/1615814029040/product.xml</originID>
+<evaluationMode>manual</evaluationMode>
+<creationInfo>
+<agencyID>us</agencyID>
+<creationTime>2021-03-15T13:13:49.040Z</creationTime>
+</creationInfo>
+</magnitude>
+<preferredOriginID>quakeml:earthquake.usgs.gov/archive/product/origin/us6000de34/us/1615814029040/product.xml</preferredOriginID>
+<preferredMagnitudeID>quakeml:earthquake.usgs.gov/archive/product/origin/us6000de34/us/1615814029040/product.xml#magnitude</preferredMagnitudeID>
+<type>earthquake</type>
+<creationInfo>
+<agencyID>us</agencyID>
+<creationTime>2021-03-15T13:18:28.793Z</creationTime>
+</creationInfo>
+</event>
+<event catalog:datasource="us" catalog:eventsource="us" catalog:eventid="6000dg77" publicID="quakeml:earthquake.usgs.gov/fdsnws/event/1/query?eventid=us6000dg77&format=quakeml">
+<description>
+<type>earthquake name</type>
+<text>southeast of the Loyalty Islands</text>
+</description>
+<origin catalog:datasource="us" catalog:dataid="us6000dg77" catalog:eventsource="us" catalog:eventid="6000dg77" publicID="quakeml:earthquake.usgs.gov/archive/product/origin/us6000dg77/us/1616077510040/product.xml">
+<time>
+<value>2021-02-10T13:19:55.531Z</value>
+</time>
+<longitude>
+<value>171.6565</value>
+</longitude>
+<latitude>
+<value>-23.051</value>
+</latitude>
+<depth>
+<value>10000</value>
+<uncertainty>1800</uncertainty>
+</depth>
+<originUncertainty>
+<horizontalUncertainty>7500</horizontalUncertainty>
+<preferredDescription>horizontal uncertainty</preferredDescription>
+</originUncertainty>
+<quality>
+<usedPhaseCount>270</usedPhaseCount>
+<standardError>0.42</standardError>
+<azimuthalGap>15</azimuthalGap>
+<minimumDistance>7.989</minimumDistance>
+</quality>
+<evaluationMode>manual</evaluationMode>
+<creationInfo>
+<agencyID>us</agencyID>
+<creationTime>2021-03-18T14:25:10.040Z</creationTime>
+</creationInfo>
+</origin>
+<magnitude catalog:datasource="us" catalog:dataid="us6000dg77" catalog:eventsource="us" catalog:eventid="6000dg77" publicID="quakeml:earthquake.usgs.gov/archive/product/origin/us6000dg77/us/1616077510040/product.xml#magnitude">
+<mag>
+<value>7.7</value>
+<uncertainty>0.042</uncertainty>
+</mag>
+<type>mww</type>
+<stationCount>54</stationCount>
+<originID>quakeml:earthquake.usgs.gov/archive/product/origin/us6000dg77/us/1616077510040/product.xml</originID>
+<evaluationMode>manual</evaluationMode>
+<creationInfo>
+<agencyID>us</agencyID>
+<creationTime>2021-03-18T14:25:10.040Z</creationTime>
+</creationInfo>
+</magnitude>
+<preferredOriginID>quakeml:earthquake.usgs.gov/archive/product/origin/us6000dg77/us/1616077510040/product.xml</preferredOriginID>
+<preferredMagnitudeID>quakeml:earthquake.usgs.gov/archive/product/origin/us6000dg77/us/1616077510040/product.xml#magnitude</preferredMagnitudeID>
+<type>earthquake</type>
+<creationInfo>
+<agencyID>us</agencyID>
+<creationTime>2021-03-18T15:36:47.620Z</creationTime>
+</creationInfo>
+</event>
+<event catalog:datasource="us" catalog:eventsource="us" catalog:eventid="6000dher" publicID="quakeml:earthquake.usgs.gov/fdsnws/event/1/query?eventid=us6000dher&format=quakeml">
+<description>
+<type>earthquake name</type>
+<text>69 km ENE of Namie, Japan</text>
+</description>
+<origin catalog:datasource="us" catalog:dataid="us6000dher" catalog:eventsource="us" catalog:eventid="6000dher" publicID="quakeml:earthquake.usgs.gov/archive/product/origin/us6000dher/us/1616864643040/product.xml">
+<time>
+<value>2021-02-13T14:07:50.194Z</value>
+</time>
+<longitude>
+<value>141.7145</value>
+</longitude>
+<latitude>
+<value>37.7534</value>
+</latitude>
+<depth>
+<value>44070</value>
+<uncertainty>2600</uncertainty>
+</depth>
+<originUncertainty>
+<horizontalUncertainty>6900</horizontalUncertainty>
+<preferredDescription>horizontal uncertainty</preferredDescription>
+</originUncertainty>
+<quality>
+<usedPhaseCount>149</usedPhaseCount>
+<standardError>0.95</standardError>
+<azimuthalGap>25</azimuthalGap>
+<minimumDistance>3.05</minimumDistance>
+</quality>
+<evaluationMode>manual</evaluationMode>
+<creationInfo>
+<agencyID>us</agencyID>
+<creationTime>2021-03-27T17:04:03.040Z</creationTime>
+</creationInfo>
+</origin>
+<magnitude catalog:datasource="us" catalog:dataid="us6000dher" catalog:eventsource="us" catalog:eventid="6000dher" publicID="quakeml:earthquake.usgs.gov/archive/product/origin/us6000dher/us/1616864643040/product.xml#magnitude">
+<mag>
+<value>7.1</value>
+<uncertainty>0.036</uncertainty>
+</mag>
+<type>mww</type>
+<stationCount>74</stationCount>
+<originID>quakeml:earthquake.usgs.gov/archive/product/origin/us6000dher/us/1616864643040/product.xml</originID>
+<evaluationMode>manual</evaluationMode>
+<creationInfo>
+<agencyID>us</agencyID>
+<creationTime>2021-03-27T17:04:03.040Z</creationTime>
+</creationInfo>
+</magnitude>
+<preferredOriginID>quakeml:earthquake.usgs.gov/archive/product/origin/us6000dher/us/1616864643040/product.xml</preferredOriginID>
+<preferredMagnitudeID>quakeml:earthquake.usgs.gov/archive/product/origin/us6000dher/us/1616864643040/product.xml#magnitude</preferredMagnitudeID>
+<type>earthquake</type>
+<creationInfo>
+<agencyID>us</agencyID>
+<creationTime>2021-03-27T17:17:56.989Z</creationTime>
+</creationInfo>
+</event>
+<creationInfo>
+<creationTime>2021-03-30T22:40:18.000Z</creationTime>
+</creationInfo>
+</eventParameters>
+</q:quakeml>
