@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='utf-8'?>
+<q:quakeml xmlns="http://quakeml.org/xmlns/bed/1.2" xmlns:q="http://quakeml.org/xmlns/quakeml/1.2" xmlns:ns0="http://geophysics.eas.gatech.edu/RTerg/00010500">
+  <eventParameters publicID="smi:local/b22d5463-4e5a-4a79-bbfd-0e33bbc6f361">
+    <event publicID="smi:local/126d5486-1ac2-42f3-aa9a-da5fade2fbac" ns0:Eventname="00010500" ns0:Txo="83" ns0:Ehf="1.3e+13" ns0:Ebb="5.9e+13" ns0:Ehf_Tr3="23000000.0" ns0:Nstats="19" ns0:iMagType="M_" ns0:SRC="__" ns0:TACER_HF="nan" ns0:TACER_BB="nan" ns0:mTime="2016-12-06 22:55:40+00:00" ns0:iteration=" A">
+      <description>
+        <text> Solomon Islands : IRIS Fetched Data</text>
+      </description>
+      <creationInfo>
+        <agencyID>NEIC</agencyID>
+      </creationInfo>
+      <origin publicID="smi:local/2b621192-5df4-48ec-8eed-285dde317503">
+        <time>
+          <value>2000-01-05T07:40:40.000000Z</value>
+        </time>
+        <latitude>
+          <value>-11.27</value>
+        </latitude>
+        <longitude>
+          <value>165.25</value>
+        </longitude>
+        <depth>
+          <value>15.0</value>
+        </depth>
+      </origin>
+      <magnitude publicID="smi:local/67a8d81d-e499-427f-b19e-45c36430ab9d">
+        <mag>
+          <value>6.28</value>
+        </mag>
+        <type>Me</type>
+        <originID>smi:local/2b621192-5df4-48ec-8eed-285dde317503</originID>
+        <creationInfo>
+          <agencyID>RTerg</agencyID>
+        </creationInfo>
+      </magnitude>
+      <magnitude publicID="smi:local/76c37142-7ad7-4aca-ad84-152ada3604b0">
+        <mag>
+          <value>6.31</value>
+        </mag>
+        <type>Mehf</type>
+        <originID>smi:local/2b621192-5df4-48ec-8eed-285dde317503</originID>
+        <creationInfo>
+          <agencyID>RTerg</agencyID>
+        </creationInfo>
+      </magnitude>
+      <magnitude publicID="smi:local/f911b309-9883-4988-9fbe-7703edbb8800">
+        <mag>
+          <value>6.0</value>
+        </mag>
+        <type>iMag</type>
+        <originID>smi:local/2b621192-5df4-48ec-8eed-285dde317503</originID>
+        <creationInfo>
+          <agencyID>NEIC</agencyID>
+        </creationInfo>
+      </magnitude>
+    </event>
+  </eventParameters>
+</q:quakeml>
