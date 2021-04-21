@@ -1,0 +1,19 @@
+#!/usr/bin/env python3
+# Andrew Newman
+# last updated Wed Apr 21 15:56:13 EDT 2021
+
+
+# just reread the pkl and reformat the csv for testing (add url)
+
+import pandas as pd
+import glob
+import sys
+import pickle
+
+with open('rterg_summary.pkl', 'rb') as f:
+    df = pickle.load(f)
+
+
+df['URL']="http://geophysics.eas.gatech.edu/anewman/research/RTerg/2021/21031600/"
+df.to_csv('rterg_summary2.csv')
+
