@@ -13,7 +13,8 @@ import pickle
 with open('rterg_summary.pkl', 'rb') as f:
     df = pickle.load(f)
 
+df2=df[df['Me']>=6.5]
 # needs to be modified to add correct address
 df['URL']="http://geophysics.eas.gatech.edu/anewman/research/RTerg/2021/21031600/"
 df.to_csv('rterg_summary2.csv')
-
+df2.to_csv('rterg_summary_M65.csv')
