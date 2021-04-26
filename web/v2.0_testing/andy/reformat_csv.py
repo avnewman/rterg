@@ -13,8 +13,32 @@ import pickle
 with open('rterg_summary.pkl', 'rb') as f:
     df = pickle.load(f)
 
-df2=df[df['Me']>=6.5]
 # needs to be modified to add correct address
 df['URL']="http://geophysics.eas.gatech.edu/anewman/research/RTerg/2021/21031600/"
+
+df2=df[df['Me']>=6.5]
 df.to_csv('rterg_summary2.csv')
 df2.to_csv('rterg_summary_M65.csv')
+
+
+# attempt to write to google sheet
+# set up google API auth here: https://pygsheets.readthedocs.io/en/latest/authorization.html
+# following connection infomration here https://erikrood.com/Posts/py_gsheets.html
+import pygsheets
+
+# authorization
+gc = pygsheets.authorize(service_file='./rterg-cat-c9494a26a4db.json')
+
+# open remote google sheet
+sh = gc.open('RTerg_cat')  # should match name I assume
+
+wks = sh[0] # first sheet
+
+wks.set_dataframe(df2,(0,0))  # write everything to sheet
+
+#wks.update_value('A1',"Eventname") # update individual value
+
+# need to create new sheet first (within googlesheets)
+#  too may have troubles the first few times, as you may need to go into the bottom of google
+#   sheets to add more lines
+sh[1].set_dataframe(df,(0,0))  # write full dataset to second sheet
