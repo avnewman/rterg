@@ -130,8 +130,7 @@ dmypy.json
 
 
 # json files (particularly cert for google accnt)
-.json
-web/v2.0_testing/andy/rterg-cat-c9494a26a4db.json
+web/v2.0_testing/andy/*.json
 
 
 # vim backups
